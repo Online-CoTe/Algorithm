@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int N;
+vector<int> P;
+
+int main(){
+	
+	cin >> N;
+	for(int i = 0; i<N; i++){
+		int x;
+		cin >> x;
+		P.push_back(x);
+ 	}
+	// 여기까지가 초기 입력값
+  
+  
+  
+	sort(P.begin(),P.end());
+	int sum=0;
+	int time=0;
+  //합의 최소를 구하기 위해서는 정렬을 해야한다.
+  
+	for(int i = 0; i<N; i++){
+		time += P[i];
+		sum += time;
+	}
+	// time은 각 사람이 돈을 인출하는데 필요한 시간이고, sum은 그 시간들의 합이다.
+  
+	printf("%d", sum);
+	return 0;
+}
