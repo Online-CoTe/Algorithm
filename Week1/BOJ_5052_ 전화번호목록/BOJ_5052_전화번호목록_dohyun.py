@@ -14,7 +14,7 @@ def is_consi(num_list):
             return False
     return True
     # num_list를 사전식으로 배열
-    # 그 후 각 원소가 바로 다음 원소의 앞부분과 같은 지 확인
+    # 그 후 각 원소가 바로 다음 원소의 앞부분과 같은지 확인
             
 
 for i in range(t):
